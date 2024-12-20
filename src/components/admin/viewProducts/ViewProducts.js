@@ -29,37 +29,6 @@ const ViewProducts = () => {
     );
   }, [dispatch, data]);
 
-  // useEffect(() => {
-  //   getProducts()
-  // }, []);
-
-  // const getProducts = () => {
-  //   setIsLoading(true)
-  //   try {
-  //     const productsRef = collection(db, "products");
-  //     const q = query(productsRef, orderBy("createdAt", 
-  //     "desc"));
-
-  //     onSnapshot(q, (snapshot) => {
-  // //  console.log(snapshot.docs);
-  //     const allProducts = snapshot.docs.map((doc) => ({
-  //       id: doc.id, 
-  //       ...doc.data(),
-  //     }));
-  //       //console.log(allProducts);
-  //       setProducts(allProducts);
-  //       setIsLoading(false);
-  //       dispatch(
-  //         STORE_PRODUCTS({
-  //         products: allProducts
-  //         })
-  //       )
-  //     });
-  //   } catch(error) {
-  //     setIsLoading(false); 
-  //     toast.error(error.message)
-  //   }
-  // };
 
   const confirmDelete = (id, imageURL) => {
     Notiflix.Confirm.show(

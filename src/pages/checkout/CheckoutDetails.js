@@ -44,10 +44,10 @@ const CheckoutDetails = () => {
         })
     };
     const handleSubmit = (e) => {
-        e.preventDefault()
+        e.preventDefault();
         dispatch(SAVE_SHIPPING_ADDRESS(shippingAddress));
         dispatch(SAVE_BILLING_ADDRESS(billingAddress));
-        navigate("./checkout");
+        navigate("/checkout");
     };
 
   return (
