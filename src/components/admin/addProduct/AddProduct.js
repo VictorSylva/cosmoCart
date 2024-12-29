@@ -33,7 +33,7 @@ const AddProduct = () => {
   console.log(productEdit);
   
   const [product, setProduct] = useState (() => {
-    const newState = detectForm(id, 
+    const newState = detectForm(id,
       { ...initialState},
       productEdit
     )

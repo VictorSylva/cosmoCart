@@ -15,7 +15,7 @@ desc, imageURL}) => {
     const shortenedText = text.substring(0, n).concat("...")
     return shortenedText;
   };
-
+  return text;
   
 }
 
@@ -43,6 +43,6 @@ desc, imageURL}) => {
     </div>
   </Card>
   );
-}
+};
 
 export default ProductItem
