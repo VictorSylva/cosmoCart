@@ -1,8 +1,8 @@
 import styles from "./Card.module.scss"
 
-const Card = ({children, cardclass}) => {
+const Card = ({children, cardClass}) => {
   return (
-    <div className={`${styles.card} ${cardclass}`}>{children}</div>
+    <div className={`${styles.card} ${cardClass}`}>{children}</div>
   )
 }
 
